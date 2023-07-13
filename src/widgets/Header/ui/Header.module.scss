@@ -24,6 +24,15 @@
   }
 }
 
+.logo_icon{
+  width: 100px;
+  height: 80px;
+  @media (max-width: 768px) {
+    width: 57px;
+    height: 46px;
+  }
+}
+
 .mode{
   width: 205px;
   display: flex;

@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import Logo from 'shared/assets/logo.svg';
+import Logo from 'shared/assets/logo.png';
 import { classNames } from 'shared/lib/classNames/classNames';
 
 import { LangSwitcher } from 'widgets/ui/LangSwitcher/LangSwitcher';
@@ -17,7 +17,7 @@ export const Header = ({ className }: HeaderProps) => {
 	return (
 		<header className={classNames(cls.Header, {}, [className])}>
 			<div className={cls.logo}>
-				<Logo />
+				<img className={cls.logo_icon} src={Logo} alt="Avion" />
 				<h1>{t('Поиск авиабилетов')}</h1>
 			</div>
 
