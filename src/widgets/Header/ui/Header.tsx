@@ -15,7 +15,7 @@ export const Header = ({ className }: HeaderProps) => {
 	const { t } = useTranslation();
 
 	return (
-		<div className={classNames(cls.Header, {}, [className])}>
+		<header className={classNames(cls.Header, {}, [className])}>
 			<div className={cls.logo}>
 				<Logo />
 				<h1>{t('Поиск авиабилетов')}</h1>
@@ -26,6 +26,6 @@ export const Header = ({ className }: HeaderProps) => {
 				<ThemeSwitcher className={cls.icon} />
 				<LangSwitcher className={cls.lang} />
 			</div>
-		</div>
+		</header>
 	);
 };
