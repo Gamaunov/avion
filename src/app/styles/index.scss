@@ -1,0 +1,20 @@
+@import "normalize";
+@import "fonts";
+@import "variables/global";
+@import "themes/light";
+@import "themes/dark";
+
+.app{
+  font-family: var(--font-family-main);
+  font-weight: 500;
+  font-size: var(--font-size-m);
+  line-height: var(--font-line-m);
+  background-color: var(--bg);
+  color: var(--primary-color);
+}
+
+.container{
+  max-width: 1069px;
+  padding: 20px;
+  margin: 0 auto;
+}

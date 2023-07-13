@@ -1,3 +1,45 @@
 .Header{
-  color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  @media (max-width: 480px) {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  column-gap: 34px;
+
+  h1{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.mode{
+  width: 205px;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  @media (max-width: 480px) {
+  justify-content: space-between;
+  }
+}
+
+.lang{
+  padding: 5px;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.icon{
+  display: flex;
 }
