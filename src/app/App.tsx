@@ -1,5 +1,5 @@
 import { TicketMenu } from 'entities/TicketMenu';
-import { Suspense, useState } from 'react';
+import { Suspense } from 'react';
 
 import { useTheme } from 'app/providers/ThemeProvider';
 

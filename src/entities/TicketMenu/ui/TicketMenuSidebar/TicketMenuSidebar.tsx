@@ -65,7 +65,7 @@ export const TicketMenuSidebar = ({ className }: TicketMenuSidebarProps) => {
 						key={uuidv4()}
 						type="radio"
 						style={variant.RADIO}
-						label="S& Airlines"
+						label="S7 Airlines"
 						labelStyle={cls.checkboxLabel}
 					/>
 				</div>
