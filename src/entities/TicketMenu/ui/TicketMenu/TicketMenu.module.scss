@@ -1,0 +1,50 @@
+.TicketMenu{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  @media (max-width: 1080px) {
+    justify-content: center;
+  }
+}
+
+.options{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+  @media (max-width: 1080px) {
+    margin-bottom: 10px;
+  }
+}
+
+.optionBtn{
+  width: 243px;
+  height: 55px;
+  background-color: var(--ticket-bg);
+  border: 1px solid var(--primary-color);
+}
+
+.activeBtn{
+  background-color: var(--primary-color);
+  color: var(--bg);
+}
+
+.btnLeft{
+  border-radius: 10px 0 0 10px;
+}
+.btnCenter{}
+.btnRight{
+  border-radius: 0 10px 10px 0;
+}
+
+.mediaD{
+  @media (max-width: 1080px) {
+    display: none;
+  }
+}
+.mediaM{
+  @media (min-width: 1080px) {
+    display: none;
+  }
+}
+

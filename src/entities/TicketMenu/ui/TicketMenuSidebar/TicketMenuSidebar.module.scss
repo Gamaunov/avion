@@ -1,0 +1,53 @@
+.TicketMenuSidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  @media (max-width: 1080px) {
+    flex-direction: row-reverse;
+    justify-content:  flex-end;
+    gap: 65px;
+  }
+}
+
+.checkboxInner{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--ticket-bg);
+  border-radius: 10px;
+  padding: 20px;
+  @media (max-width: 1080px) {
+    background-color: var(--primary-color);
+    color: var(--bg);
+  }
+}
+
+.checkboxTitle{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 7px;
+}
+
+
+.checkboxItems{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px 0 20px;
+  margin-bottom: 20px;
+  @media (max-width: 1080px) {
+    padding: 0;
+  }
+}
+
+.checkboxLabel{
+  color: var(--secondary-color);
+  @media (max-width: 1080px) {
+    color: var(--bg);
+  }
+}
+
+.additional{
+  color: red;
+}

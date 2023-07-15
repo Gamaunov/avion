@@ -1,3 +1,28 @@
 {
-
+	"ticket": [
+		{
+			"id": "1",
+			"destination": "SVO - LED",
+			"time": "14:00-16:00",
+			"destinationTime": "2 ч 0 мин",
+			"transfer": "Без пересадок",
+			"company": "RED WINGS"
+		},
+		{
+			"id": "2",
+			"destination": "SVO - LED",
+			"time": "12:00-16:30",
+			"destinationTime": "4 ч 30 мин",
+			"transfer": "1 пересадка",
+			"company": "ПОБЕДА"
+		},
+		{
+			"id": "3",
+			"destination": "SVO - LED",
+			"time": "04:50-13:30",
+			"destinationTime": "8 ч 40 мин",
+			"transfer": "2 пересадки",
+			"company": "AIRLINES"
+		}
+	]
 }

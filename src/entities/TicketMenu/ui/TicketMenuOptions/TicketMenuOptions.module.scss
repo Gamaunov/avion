@@ -1,0 +1,33 @@
+.TicketMenuOptions{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  color: var(--bg);
+  border-radius: 10px;
+}
+
+.options{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  min-height: 44px;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: inherit;
+}
+
+.dropdown{
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+}
+
+.showOptions{
+  display: none;
+}
