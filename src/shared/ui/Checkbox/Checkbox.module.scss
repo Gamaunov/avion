@@ -1,0 +1,87 @@
+.inputInner {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-left: 35px;
+}
+
+.input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	padding-left: 20px;
+
+	&:checked + .checkboxStyle::before {
+		height: 7px;
+		left: 4px;
+		top: 9px;
+		transform: rotate(-45deg);
+	}
+	&:checked + .checkboxStyle::after {
+		height: 16px;
+		left: 11px;
+		top: 1px;
+		transform: rotate(-135deg);
+	}
+
+	&:disabled + .checkboxStyle {
+		border-color: var(--bg);
+		@media (max-width: 1080px) {
+			border: 1px solid var(--danger);
+		}
+	}
+
+	&:checked:disabled + .checkboxStyle::before {
+		background-color: var(--bg);
+	}
+
+	&:focus + .checkboxStyle,
+	&:focus + .radioStyle {
+		box-shadow: 0 0 0 1px #000;
+	}
+
+	&:checked + .radioStyle::before {
+		height: 15px;
+		width: 15px;
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.checkboxStyle,
+.radioStyle {
+	position: absolute;
+	top: -1px;
+	width: 21px;
+	height: 21px;
+	border: 1px solid var(--primary-color);
+	margin-left: -35px;
+	@media (max-width: 1080px) {
+		border: 1px solid var(--bg);
+	}
+}
+
+.checkboxStyle {
+	border-radius: 4px;
+}
+.radioStyle {
+	border-radius: 50%;
+}
+
+.checkboxStyle::before,
+.checkboxStyle::after,
+.radioStyle::before,
+.radioStyle::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	background-color: var(--primary-color);
+	@media (max-width: 1080px) {
+		background-color: var(--bg);
+
+	}
+}
