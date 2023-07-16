@@ -1,5 +1,6 @@
 import { TicketMenuSidebar } from 'entities/TicketMenu/ui/TicketMenuSidebar/TicketMenuSidebar';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaChevronDown } from 'react-icons/fa';
 
 import { classNames } from 'shared/lib/classNames/classNames';
@@ -11,6 +12,7 @@ interface TicketMenuOptionsProps {
 	className?: string;
 }
 export const TicketMenuOptions = ({ className }: TicketMenuOptionsProps) => {
+	const { t } = useTranslation();
 	const [showOption, setShowOption] = useState(false);
 
 	const handleShowOption = () => {
@@ -19,10 +21,10 @@ export const TicketMenuOptions = ({ className }: TicketMenuOptionsProps) => {
 	return (
 		<div className={classNames(cls.TicketMenuOptions, {}, [className])}>
 			<div className={cls.options}>
-				<p>Любая авиакомпания, любое кол-во пересадок</p>
+				<p> {t('Любая авиакомпания, любое кол-во пересадок')}</p>
 				<Button className={cls.button} onClick={handleShowOption}>
 					<span className={cls.dropdown}>
-						Открыть настройки
+						{t('Открыть настройки')}
 						<FaChevronDown />
 					</span>
 				</Button>

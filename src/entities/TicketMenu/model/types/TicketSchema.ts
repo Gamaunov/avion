@@ -1,9 +1,10 @@
 export interface TicketSchema {
 	id: string;
-	price: number;
+	price: string;
 	destination: string;
 	time: string;
-	destinationTime: string;
+	hours: number;
+	minutes: number;
 	transfer: string;
 	company: string;
 }

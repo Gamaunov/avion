@@ -16,7 +16,7 @@ export const TicketMenuSidebar = ({ className }: TicketMenuSidebarProps) => {
 	return (
 		<div className={classNames(cls.TicketMenuSidebar, {}, [className])}>
 			<div className={cls.checkboxInner}>
-				<h4 className={cls.checkboxTitle}>Количество пересадок</h4>
+				<h4 className={cls.checkboxTitle}>{t('Количество пересадок')}</h4>
 				<div className={cls.checkboxItems}>
 					<Checkbox
 						key={uuidv4()}
@@ -54,7 +54,7 @@ export const TicketMenuSidebar = ({ className }: TicketMenuSidebarProps) => {
 			</div>
 
 			<div className={cls.checkboxInner}>
-				<h4 className={cls.checkboxTitle}>Компании</h4>
+				<h4 className={cls.checkboxTitle}>{t('Компании')}</h4>
 				<div className={cls.checkboxItems}>
 					<Checkbox
 						key={uuidv4()}

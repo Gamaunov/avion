@@ -1,6 +1,7 @@
 import { fetchTicket } from 'entities/TicketMenu';
 import { Path } from 'entities/TicketMenu/model/types/path';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import Pobeda from 'shared/assets/pobeda.svg';
 import RedWings from 'shared/assets/red-wings.svg';
@@ -18,6 +19,8 @@ interface TicketProps {
 	className?: string;
 }
 export const Ticket = ({ className }: TicketProps) => {
+	const { t } = useTranslation('ticket');
+
 	const { isLoading, error } = useAppSelector((state) => state.ticket);
 	const ticket = useAppSelector((state) => state.ticket.ticket);
 	const dispatch = useAppDispatch();
@@ -48,8 +51,10 @@ export const Ticket = ({ className }: TicketProps) => {
 							<span>{ticket.time}</span>
 						</div>
 						<div className={cls.time}>
-							<span className={cls.title}>В пути</span>
-							<span>{ticket.destinationTime}</span>
+							<span className={cls.title}>{t('В пути')}</span>
+							<div>
+								{ticket.hours} {t('ч')} {ticket.minutes} {t('мин')}
+							</div>
 						</div>
 						<div className={cls.companyTrans}>
 							{ticket.company === 'RED WINGS' && (
@@ -60,13 +65,22 @@ export const Ticket = ({ className }: TicketProps) => {
 							)}
 							{ticket.company === 'AIRLINES' && <S7 className={cls.company} />}
 
-							<span className={cls.title}>Пересадки</span>
-							<span>{ticket.transfer}</span>
+							<span className={cls.title}>{t('Пересадки')}</span>
+							<span>
+								{ticket.transfer === 'Без пересадок' ? t('Без пересадок') : ''}
+								{ticket.transfer === '1 пересадка' ? t('1 пересадка') : ''}
+								{ticket.transfer === '2 пересадки' ? t('2 пересадки') : ''}
+								{ticket.transfer === '3 пересадки' ? t('3 пересадки') : ''}
+							</span>
 						</div>
 					</div>
 				))
 			)}
-			{error && <h2>An error occured: {error}</h2>}
+			{error && (
+				<h2>
+					{t('Произошла ошибка')}: {error}
+				</h2>
+			)}
 		</div>
 	);
 };

@@ -97,7 +97,7 @@ export const TicketMenu = ({ className }: TicketMenuProps) => {
 					disabled={loadMoreBtn}
 					className={classNames(cls.loadMoreBtn, {}, [className])}
 				>
-					Загрузить еще билеты
+					{t('Загрузить еще билеты')}
 				</Button>
 			</div>
 		</main>

@@ -2,82 +2,91 @@
 	"ticket": [
 		{
 			"id": "1",
-			"price": 21500,
+			"price": "21 500",
 			"destination": "SVO - LED",
 			"time": "14:00-16:00",
-			"destinationTime": "2 ч 0 мин",
+			"hours": 2,
+			"minutes": 0,
 			"transfer": "Без пересадок",
 			"company": "RED WINGS"
 		},
 		{
 			"id": "2",
-			"price": 12680,
+			"price": "12 680",
 			"destination": "SVO - LED",
 			"time": "12:00-16:30",
-			"destinationTime": "4 ч 30 мин",
+			"hours": 4,
+			"minutes": 30,
 			"transfer": "1 пересадка",
 			"company": "ПОБЕДА"
 		},
 		{
 			"id": "3",
-			"price": 23995,
+			"price": "23 995",
 			"destination": "SVO - LED",
 			"time": "04:50-13:30",
-			"destinationTime": "8 ч 40 мин",
+			"hours": 8,
+			"minutes": 40,
 			"transfer": "2 пересадки",
 			"company": "AIRLINES"
 		},
 		{
 			"id": "4",
-			"price": 500,
+			"price": "500",
 			"destination": "MSK - LA",
 			"time": "17:00-16:00",
-			"destinationTime": "23 ч 0 мин",
+			"hours": 23,
+			"minutes": 0,
 			"transfer": "Без пересадок",
 			"company": "RED WINGS"
 		},
 		{
 			"id": "5",
-			"price": 4680,
+			"price": "4 680",
 			"destination": "BLG - SPB",
 			"time": "12:00-16:30",
-			"destinationTime": "4 ч 30 мин",
+			"hours": 4,
+			"minutes": 30,
 			"transfer": "1 пересадка",
 			"company": "ПОБЕДА"
 		},
 		{
 			"id": "6",
-			"price": 1000,
+			"price": "1 000",
 			"destination": "SVO - LED",
 			"time": "04:50-13:30",
-			"destinationTime": "8 ч 40 мин",
+			"hours": 8,
+			"minutes": 40,
 			"transfer": "2 пересадки",
 			"company": "AIRLINES"
 		},
 		{
 			"id": "7",
-			"price": 9000,
+			"price": "9 000",
 			"destination": "SVO - LED",
 			"time": "14:00-16:00",
-			"destinationTime": "2 ч 0 мин",
+			"hours": 2,
+			"minutes": 0,
 			"transfer": "Без пересадок",
 			"company": "RED WINGS"
 		},
 		{
 			"id": "8",
-			"price": 14180,
+			"price": "14 180",
 			"destination": "SVO - LED",
 			"time": "12:00-16:30",
-			"destinationTime": "4 ч 30 мин",
+			"hours": 4,
+			"minutes": 30,
 			"transfer": "1 пересадка",
 			"company": "ПОБЕДА"
 		},
 		{
 			"id": "9",
-			"price": 25995,
+			"price": "25 995",
 			"destination": "SVO - LED",
 			"time": "04:50-13:30",
-			"destinationTime": "8 ч 40 мин",
+			"hours": 8,
+			"minutes": 40,
 			"transfer": "2 пересадки",
 			"company": "AIRLINES"
 		}
@@ -85,28 +94,31 @@
 	"pobeda": [
 		{
 			"id": "2",
-			"price": 12680,
+			"price": "12 680",
 			"destination": "SVO - LED",
 			"time": "12:00-16:30",
-			"destinationTime": "4 ч 30 мин",
+			"hours": 4,
+			"minutes": 30,
 			"transfer": "1 пересадка",
 			"company": "ПОБЕДА"
 		},
 		{
 			"id": "5",
-			"price": 4680,
+			"price": "46 80",
 			"destination": "BLG - SPB",
 			"time": "12:00-16:30",
-			"destinationTime": "4 ч 30 мин",
+			"hours": 4,
+			"minutes": 30,
 			"transfer": "1 пересадка",
 			"company": "ПОБЕДА"
 		},
 		{
 			"id": "8",
-			"price": 14180,
+			"price": "14 180",
 			"destination": "SVO - LED",
 			"time": "12:00-16:30",
-			"destinationTime": "4 ч 30 мин",
+			"hours": 4,
+			"minutes": 30,
 			"transfer": "1 пересадка",
 			"company": "ПОБЕДА"
 		}
@@ -114,28 +126,31 @@
 	"redwings": [
 		{
 			"id": "1",
-			"price": 21500,
+			"price": "21 500",
 			"destination": "SVO - LED",
 			"time": "14:00-16:00",
-			"destinationTime": "2 ч 0 мин",
+			"hours": 2,
+			"minutes": 0,
 			"transfer": "Без пересадок",
 			"company": "RED WINGS"
 		},
 		{
 			"id": "4",
-			"price": 500,
+			"price": "500",
 			"destination": "MSK - LA",
 			"time": "17:00-16:00",
-			"destinationTime": "23 ч 0 мин",
+			"hours": 23,
+			"minutes": 0,
 			"transfer": "Без пересадок",
 			"company": "RED WINGS"
 		},
 		{
 			"id": "7",
-			"price": 9000,
+			"price": "9 000",
 			"destination": "SVO - LED",
 			"time": "14:00-16:00",
-			"destinationTime": "2 ч 0 мин",
+			"hours": 2,
+			"minutes": 0,
 			"transfer": "Без пересадок",
 			"company": "RED WINGS"
 		}
@@ -143,28 +158,31 @@
 	"s7airlines": [
 		{
 			"id": "3",
-			"price": 23995,
+			"price": "23 995",
 			"destination": "SVO - LED",
 			"time": "04:50-13:30",
-			"destinationTime": "8 ч 40 мин",
+			"hours": 8,
+			"minutes": 40,
 			"transfer": "2 пересадки",
 			"company": "AIRLINES"
 		},
 		{
 			"id": "6",
-			"price": 1000,
+			"price": "1 000",
 			"destination": "SVO - LED",
 			"time": "04:50-13:30",
-			"destinationTime": "8 ч 40 мин",
+			"hours": 8,
+			"minutes": 40,
 			"transfer": "2 пересадки",
 			"company": "AIRLINES"
 		},
 		{
 			"id": "9",
-			"price": 25995,
+			"price": "25 995",
 			"destination": "SVO - LED",
 			"time": "04:50-13:30",
-			"destinationTime": "8 ч 40 мин",
+			"hours": 8,
+			"minutes": 40,
 			"transfer": "2 пересадки",
 			"company": "AIRLINES"
 		}
@@ -172,28 +190,31 @@
 	"transfer_0": [
 		{
 			"id": "1",
-			"price": 21500,
+			"price": "21 500",
 			"destination": "SVO - LED",
 			"time": "14:00-16:00",
-			"destinationTime": "2 ч 0 мин",
+			"hours": 2,
+			"minutes": 0,
 			"transfer": "Без пересадок",
 			"company": "RED WINGS"
 		},
 		{
 			"id": "4",
-			"price": 500,
+			"price": "500",
 			"destination": "MSK - LA",
 			"time": "17:00-16:00",
-			"destinationTime": "23 ч 0 мин",
+			"hours": 23,
+			"minutes": 0,
 			"transfer": "Без пересадок",
 			"company": "RED WINGS"
 		},
 		{
 			"id": "7",
-			"price": 9000,
+			"price": "9 000",
 			"destination": "SVO - LED",
 			"time": "14:00-16:00",
-			"destinationTime": "2 ч 0 мин",
+			"hours": 2,
+			"minutes": 0,
 			"transfer": "Без пересадок",
 			"company": "RED WINGS"
 		}
@@ -201,28 +222,31 @@
 	"transfer_1": [
 		{
 			"id": "2",
-			"price": 12680,
+			"price": "12 680",
 			"destination": "SVO - LED",
 			"time": "12:00-16:30",
-			"destinationTime": "4 ч 30 мин",
+			"hours": 4,
+			"minutes": 30,
 			"transfer": "1 пересадка",
 			"company": "ПОБЕДА"
 		},
 		{
 			"id": "5",
-			"price": 4680,
+			"price": "4 680",
 			"destination": "BLG - SPB",
 			"time": "12:00-16:30",
-			"destinationTime": "4 ч 30 мин",
+			"hours": 4,
+			"minutes": 30,
 			"transfer": "1 пересадка",
 			"company": "ПОБЕДА"
 		},
 		{
 			"id": "8",
-			"price": 14180,
+			"price": "14 180",
 			"destination": "SVO - LED",
 			"time": "12:00-16:30",
-			"destinationTime": "4 ч 30 мин",
+			"hours": 4,
+			"minutes": 30,
 			"transfer": "1 пересадка",
 			"company": "ПОБЕДА"
 		}
@@ -230,28 +254,31 @@
 	"transfer_2": [
 		{
 			"id": "3",
-			"price": 23995,
+			"price": "23 995",
 			"destination": "SVO - LED",
 			"time": "04:50-13:30",
-			"destinationTime": "8 ч 40 мин",
+			"hours": 8,
+			"minutes": 40,
 			"transfer": "2 пересадки",
 			"company": "AIRLINES"
 		},
 		{
 			"id": "6",
-			"price": 1000,
+			"price": "1 000",
 			"destination": "SVO - LED",
 			"time": "04:50-13:30",
-			"destinationTime": "8 ч 40 мин",
+			"hours": 8,
+			"minutes": 40,
 			"transfer": "2 пересадки",
 			"company": "AIRLINES"
 		},
 		{
 			"id": "9",
-			"price": 25995,
+			"price": "25 995",
 			"destination": "SVO - LED",
 			"time": "04:50-13:30",
-			"destinationTime": "8 ч 40 мин",
+			"hours": 8,
+			"minutes": 40,
 			"transfer": "2 пересадки",
 			"company": "AIRLINES"
 		}
@@ -259,28 +286,31 @@
 	"cheapest": [
 		{
 			"id": "4",
-			"price": 500,
+			"price": "500",
 			"destination": "MSK - LA",
 			"time": "17:00-16:00",
-			"destinationTime": "23 ч 0 мин",
+			"hours": 23,
+			"minutes": 0,
 			"transfer": "Без пересадок",
 			"company": "RED WINGS"
 		},
 		{
 			"id": "5",
-			"price": 4680,
+			"price": "4 680",
 			"destination": "BLG - SPB",
 			"time": "12:00-16:30",
-			"destinationTime": "4 ч 30 мин",
+			"hours": 4,
+			"minutes": 30,
 			"transfer": "1 пересадка",
 			"company": "ПОБЕДА"
 		},
 		{
 			"id": "6",
-			"price": 1000,
+			"price": "1 000",
 			"destination": "SVO - LED",
 			"time": "04:50-13:30",
-			"destinationTime": "8 ч 40 мин",
+			"hours": 8,
+			"minutes": 40,
 			"transfer": "2 пересадки",
 			"company": "AIRLINES"
 		}
@@ -288,28 +318,31 @@
 	"fastest": [
 		{
 			"id": "1",
-			"price": 21500,
+			"price": "21 500",
 			"destination": "SVO - LED",
 			"time": "14:00-16:00",
-			"destinationTime": "2 ч 0 мин",
+			"hours": 2,
+			"minutes": 0,
 			"transfer": "Без пересадок",
 			"company": "RED WINGS"
 		},
 		{
 			"id": "7",
-			"price": 9000,
+			"price": "9 000",
 			"destination": "SVO - LED",
 			"time": "14:00-16:00",
-			"destinationTime": "2 ч 0 мин",
+			"hours": 2,
+			"minutes": 0,
 			"transfer": "Без пересадок",
 			"company": "RED WINGS"
 		},
 		{
 			"id": "5",
-			"price": 4680,
+			"price": "4 680",
 			"destination": "BLG - SPB",
 			"time": "12:00-16:30",
-			"destinationTime": "4 ч 30 мин",
+			"hours": 4,
+			"minutes": 30,
 			"transfer": "1 пересадка",
 			"company": "ПОБЕДА"
 		}
@@ -317,28 +350,31 @@
 	"optimal": [
 		{
 			"id": "5",
-			"price": 4680,
+			"price": "4 680",
 			"destination": "BLG - SPB",
 			"time": "12:00-16:30",
-			"destinationTime": "4 ч 30 мин",
+			"hours": 4,
+			"minutes": 30,
 			"transfer": "1 пересадка",
 			"company": "ПОБЕДА"
 		},
 		{
 			"id": "8",
-			"price": 14180,
+			"price": "14 180",
 			"destination": "SVO - LED",
 			"time": "12:00-16:30",
-			"destinationTime": "4 ч 30 мин",
+			"hours": 4,
+			"minutes": 30,
 			"transfer": "1 пересадка",
 			"company": "ПОБЕДА"
 		},
 		{
 			"id": "7",
-			"price": 9000,
+			"price": "9 000",
 			"destination": "SVO - LED",
 			"time": "14:00-16:00",
-			"destinationTime": "2 ч 0 мин",
+			"hours": 2,
+			"minutes": 0,
 			"transfer": "Без пересадок",
 			"company": "RED WINGS"
 		}
