@@ -1,5 +1,6 @@
 import { fetchTicket } from 'entities/TicketMenu';
-import { useEffect, useState } from 'react';
+import { Path } from 'entities/TicketMenu/model/types/path';
+import { useEffect } from 'react';
 
 import Pobeda from 'shared/assets/pobeda.svg';
 import RedWings from 'shared/assets/red-wings.svg';
@@ -22,7 +23,9 @@ export const Ticket = ({ className }: TicketProps) => {
 	const dispatch = useAppDispatch();
 
 	useEffect(() => {
-		dispatch(fetchTicket());
+		const limit = 3;
+		const search = Path.TICKET;
+		dispatch(fetchTicket({ limit, search }));
 	}, [dispatch]);
 
 	return (

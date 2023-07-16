@@ -28,6 +28,9 @@
 
 	&:disabled + .checkboxStyle {
 		border-color: var(--bg);
+		@media (max-width: 1080px) {
+			border: 1px solid var(--danger);
+		}
 	}
 
 	&:checked:disabled + .checkboxStyle::before {

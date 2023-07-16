@@ -1,53 +1,72 @@
-.TicketMenuSidebar{
-  display: flex;
-  flex-direction: column;
-  gap: 47px;
-  @media (max-width: 1080px) {
-    flex-direction: row-reverse;
-    justify-content:  flex-end;
-    gap: 65px;
-  }
+.TicketMenuSidebar,
+.checkboxInner,
+.checkboxItems {
+	display: flex;
+	flex-direction: column;
 }
 
-.checkboxInner{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: var(--ticket-bg);
-  border-radius: 10px;
-  padding: 20px;
-  @media (max-width: 1080px) {
-    background-color: var(--primary-color);
-    color: var(--bg);
-  }
+.TicketMenuSidebar {
+	gap: 47px;
+	@media (max-width: 1080px) {
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+		gap: 65px;
+	}
+	@media (max-width: 590px) {
+		width: 300px;
+	}
+	@media (max-width: 590px) {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
 }
 
-.checkboxTitle{
-  font-size: 20px;
-  font-weight: 700;
-  text-align: left;
-  margin-bottom: 7px;
+.checkboxInner {
+	gap: 20px;
+	background-color: var(--ticket-bg);
+	border-radius: 10px;
+	padding: 20px;
+	@media (max-width: 1080px) {
+		background-color: var(--primary-color);
+		color: var(--bg);
+	}
+
 }
 
-
-.checkboxItems{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 0 20px 0 20px;
-  margin-bottom: 20px;
-  @media (max-width: 1080px) {
-    padding: 0;
-  }
+.checkboxTitle {
+	font-size: 20px;
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 7px;
+	@media (max-width: 890px) {
+		font-size: 16px;
+	}
+	@media (max-width: 590px) {
+		width: 400px;
+	}
+	@media (max-width: 440px) {
+		width: 300px;
+	}
 }
 
-.checkboxLabel{
-  color: var(--secondary-color);
-  @media (max-width: 1080px) {
-    color: var(--bg);
-  }
+.checkboxItems {
+	gap: 20px;
+	padding: 0 20px 0 20px;
+	margin-bottom: 20px;
+	@media (max-width: 1080px) {
+		padding: 0;
+	}
+
 }
 
-.additional{
-  color: red;
+.checkboxLabel {
+	color: var(--secondary-color);
+	@media (max-width: 1080px) {
+		color: var(--bg);
+	}
+}
+
+.additional {
+	color: red;
 }

@@ -5,7 +5,7 @@ import { useTheme } from 'app/providers/ThemeProvider';
 
 import { classNames } from 'shared/lib/classNames/classNames';
 
-import { Header } from 'widgets/Header/ui/Header';
+import { Header } from 'widgets/Header';
 
 function App() {
 	const { theme } = useTheme();

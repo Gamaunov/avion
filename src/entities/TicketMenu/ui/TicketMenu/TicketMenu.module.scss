@@ -15,6 +15,16 @@
   @media (max-width: 1080px) {
     margin-bottom: 10px;
   }
+  @media (max-width: 890px) {
+    width: 540px;
+    font-size: 12px;
+  }
+  @media (max-width: 590px) {
+    width: 400px;
+  }
+  @media (max-width: 440px) {
+    width: 300px;
+  }
 }
 
 .optionBtn{
@@ -56,5 +66,17 @@
   font-weight: 700;
   background-color: var(--primary-color);
   color: var(--bg);
+  &:disabled{
+    cursor: no-drop;
+  }
+  @media (max-width: 890px) {
+    font-size: 16px;
+  }
+  @media (max-width: 590px) {
+    width: 400px;
+  }
+  @media (max-width: 440px) {
+    width: 300px;
+  }
 }
 

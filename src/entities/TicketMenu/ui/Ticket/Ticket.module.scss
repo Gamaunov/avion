@@ -1,46 +1,68 @@
-.Ticket{
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-bottom: 50px;
+.Ticket,
+.TicketInner,
+.priceDestTime,
+.time,
+.companyTrans {
+	display: flex;
 }
 
-.TicketInner{
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 40px 30px;
-  border-radius: 10px;
-  background-color: var(--ticket-bg);
-  color: var(--primary-color);
+.Ticket {
+	flex-direction: column;
+	gap: 50px;
+	margin-bottom: 50px;
+}
+
+.TicketInner {
+	width: 100%;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 40px 30px;
+	border-radius: 10px;
+	background-color: var(--ticket-bg);
+	color: var(--primary-color);
+  @media (max-width: 890px) {
+    width: 540px;
+    font-size: 12px;
+  }
+  @media (max-width: 590px) {
+    width: 400px;
+  }
+	@media (max-width: 440px) {
+		width: 300px;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 15px;
+	}
 }
 
 .priceDestTime,
 .time,
-.companyTrans{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
+.companyTrans {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
 }
 
-.title{
-  color: var(--secondary-color);
+.title {
+	color: var(--secondary-color);
 }
 
-.price{
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 15px;
+.price {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	@media (max-width: 590px) {
+		font-size: 24px;
+	}
 }
 
-.company{
-  margin-bottom: 15px;
+.company {
+	margin-bottom: 15px;
+
 }
 
-.skeleton{
-  width: 100%;
-  height: 174px;
-  border-radius: 10px;
+.skeleton {
+	width: 100%;
+	height: 174px;
+	border-radius: 10px;
 }

@@ -1,3 +1,4 @@
+import { Path } from 'entities/TicketMenu/model/types/path';
 import { useTranslation } from 'react-i18next';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -11,6 +12,7 @@ interface TicketMenuSidebarProps {
 }
 export const TicketMenuSidebar = ({ className }: TicketMenuSidebarProps) => {
 	const { t } = useTranslation();
+
 	return (
 		<div className={classNames(cls.TicketMenuSidebar, {}, [className])}>
 			<div className={cls.checkboxInner}>
@@ -22,21 +24,28 @@ export const TicketMenuSidebar = ({ className }: TicketMenuSidebarProps) => {
 						label={t('Без пересадок')}
 						labelStyle={cls.checkboxLabel}
 						className={cls.additional}
+						limit={3}
+						path={Path.TRANSFER_0}
 					/>
 					<Checkbox
 						key={uuidv4()}
 						style={variant.CHECKBOX}
 						label={t('1 пересадка')}
 						labelStyle={cls.checkboxLabel}
+						limit={3}
+						path={Path.TRANSFER_1}
 					/>
 					<Checkbox
 						key={uuidv4()}
 						style={variant.CHECKBOX}
 						label={t('2 пересадки')}
 						labelStyle={cls.checkboxLabel}
+						limit={3}
+						path={Path.TRANSFER_2}
 					/>
 					<Checkbox
 						key={uuidv4()}
+						disabled={true}
 						style={variant.CHECKBOX}
 						label={t('3 пересадки')}
 						labelStyle={cls.checkboxLabel}
@@ -53,6 +62,8 @@ export const TicketMenuSidebar = ({ className }: TicketMenuSidebarProps) => {
 						style={variant.RADIO}
 						label="Победа"
 						labelStyle={cls.checkboxLabel}
+						limit={3}
+						path={Path.POBEDA}
 					/>
 					<Checkbox
 						key={uuidv4()}
@@ -60,6 +71,8 @@ export const TicketMenuSidebar = ({ className }: TicketMenuSidebarProps) => {
 						style={variant.RADIO}
 						label="Red Wings"
 						labelStyle={cls.checkboxLabel}
+						limit={3}
+						path={Path.REDWINGS}
 					/>
 					<Checkbox
 						key={uuidv4()}
@@ -67,6 +80,8 @@ export const TicketMenuSidebar = ({ className }: TicketMenuSidebarProps) => {
 						style={variant.RADIO}
 						label="S7 Airlines"
 						labelStyle={cls.checkboxLabel}
+						limit={3}
+						path={Path.S7AIRLINES}
 					/>
 				</div>
 			</div>

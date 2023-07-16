@@ -6,20 +6,12 @@ export interface TicketState {
 	ticket: TicketSchema[];
 	isLoading: boolean;
 	error: string | null;
-	// pagination
-	// page: number;
-	// limit?: number;
-	// hasMore: boolean;
-
-	// _inited: boolean;
 }
 
 const initialState: TicketState = {
 	ticket: [],
 	isLoading: false,
 	error: null,
-	// page: 1,
-	// hasMore: true,
 };
 
 export const ticketSlice = createSlice({

@@ -1,16 +1,13 @@
 import { fetchTicket } from 'entities/TicketMenu';
+import { Path } from 'entities/TicketMenu/model/types/path';
 import { Ticket } from 'entities/TicketMenu/ui/Ticket/Ticket';
 import { TicketMenuOptions } from 'entities/TicketMenu/ui/TicketMenuOptions/TicketMenuOptions';
 import { TicketMenuSidebar } from 'entities/TicketMenu/ui/TicketMenuSidebar/TicketMenuSidebar';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { v4 as uuidv4 } from 'uuid';
 
 import { classNames } from 'shared/lib/classNames/classNames';
-import {
-	useAppDispatch,
-	useAppSelector,
-} from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Button } from 'shared/ui/Button/Button';
 
 import cls from './TicketMenu.module.scss';
@@ -21,18 +18,42 @@ interface TicketMenuProps {
 export const TicketMenu = ({ className }: TicketMenuProps) => {
 	const { t } = useTranslation();
 
-	const ticket = useAppSelector((state) => state.ticket.ticket);
 	const dispatch = useAppDispatch();
 
-	const [leftBtnActive, setLeftBtnActive] = useState(true);
+	const [leftBtnActive, setLeftBtnActive] = useState(false);
 	const [centerBtnActive, setCenterBtnActive] = useState(false);
 	const [rightBtnActive, setRightBtnActive] = useState(false);
-	const handleBtnLeft = () => setLeftBtnActive((prev) => !prev);
-	const handleBtnCenter = () => setCenterBtnActive((prev) => !prev);
-	const handleBtnRight = () => setRightBtnActive((prev) => !prev);
+	const handleBtnLeft = () => {
+		setLeftBtnActive((prev) => !prev);
+		setCenterBtnActive(false);
+		setRightBtnActive(false);
+		const limit = 3;
+		const search = Path.CHEAPEST;
+		dispatch(fetchTicket({ limit, search }));
+	};
+	const handleBtnCenter = () => {
+		setLeftBtnActive(false);
+		setRightBtnActive(false);
+		setCenterBtnActive((prev) => !prev);
+		const limit = 3;
+		const search = Path.FASTEST;
+		dispatch(fetchTicket({ limit, search }));
+	};
+	const handleBtnRight = () => {
+		setLeftBtnActive(false);
+		setCenterBtnActive(false);
+		setRightBtnActive((prev) => !prev);
+		const limit = 3;
+		const search = Path.OPTIMAL;
+		dispatch(fetchTicket({ limit, search }));
+	};
+	const [loadMoreBtn, setLoadMoreBtn] = useState(false);
 
 	const handleLoadMore = () => {
-		// dispatch(fetchTicket(3));
+		setLoadMoreBtn(true);
+		const limit = 9;
+		const search = Path.TICKET;
+		dispatch(fetchTicket({ limit, search }));
 	};
 
 	return (
@@ -71,7 +92,11 @@ export const TicketMenu = ({ className }: TicketMenuProps) => {
 				<TicketMenuOptions className={cls.mediaM} />
 
 				<Ticket />
-				<Button className={cls.loadMoreBtn} onClick={handleLoadMore}>
+				<Button
+					onClick={handleLoadMore}
+					disabled={loadMoreBtn}
+					className={classNames(cls.loadMoreBtn, {}, [className])}
+				>
 					Загрузить еще билеты
 				</Button>
 			</div>

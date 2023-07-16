@@ -1,10 +1,20 @@
 .TicketMenuOptions{
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-color);
-  color: var(--bg);
   border-radius: 10px;
+  color: var(--bg);
+  background-color: var(--primary-color);
   margin-bottom: 30px;
+  @media (max-width: 890px) {
+    width: 540px;
+    font-size: 12px;
+  }
+  @media (max-width: 590px) {
+    width: 400px;
+  }
+  @media (max-width: 440px) {
+    width: 300px;
+  }
 }
 
 .options{
@@ -27,6 +37,9 @@
   display: flex;
   align-items: center;
   column-gap: 17px;
+  @media (max-width: 590px) {
+    column-gap: 5px;
+  }
 }
 
 .showOptions{
