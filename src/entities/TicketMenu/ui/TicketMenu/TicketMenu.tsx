@@ -90,7 +90,6 @@ export const TicketMenu = ({ className }: TicketMenuProps) => {
 					</Button>
 				</div>
 				<TicketMenuOptions className={cls.mediaM} />
-
 				<Ticket />
 				<Button
 					onClick={handleLoadMore}
