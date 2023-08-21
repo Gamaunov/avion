@@ -8,9 +8,6 @@
 <a href="https://www.i18next.com/" ><img src="https://img.shields.io/badge/i18next-26A69A?style=for-the-badge&logo=i18next&logoColor=000000"/></a> 
 <a href="https://jestjs.io/ru/"><img src="https://img.shields.io/badge/jest-C21325?style=for-the-badge&logo=jest&logoColor=000000"/></a> 
 
-## Описание
-Запускайте проект командой <a href="https://github.com/Gamaunov/HR/blob/main/package.json">start:dev</a>
-###
 <img src="https://github.com/Gamaunov/avion/blob/main/src/shared/assets/design/2.png"/>
 <img src="https://github.com/Gamaunov/avion/blob/main/src/shared/assets/design/1.png"/>
 
